@@ -94,7 +94,6 @@ class TodoListState extends State<TodoList> {
       return new Scaffold(
           appBar: new AppBar(title: new Text('Add a new task')),
           body: new TextField(
-            controller: ,
             autofocus: true,
             onSubmitted: (val) {
               _addTodoItems(val);
@@ -135,7 +134,4 @@ class TodoListState extends State<TodoList> {
         });
   }
 
-  void _resetState() {
-    _todoItems = [];
-  }
 }
